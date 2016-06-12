@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- 下面的dimen是要写的，不写就会出错哦 -->
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    
+    <string name="app_name">music_play</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

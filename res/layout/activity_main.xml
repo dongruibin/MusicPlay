@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+  <ListView 
+      android:id="@+id/listview"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+	  android:paddingBottom="@dimen/activity_vertical_margin"
+	  android:paddingLeft="@dimen/activity_horizontal_margin"
+	  android:paddingRight="@dimen/activity_horizontal_margin"
+	  android:paddingTop="@dimen/activity_vertical_margin"
+	  android:cacheColorHint="#00000000"
+	  android:background="#ffffff"
+	  android:divider="@null"
+	  android:layout_weight="1"
+      ></ListView>
+  
+  <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+      <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center">
+       <TextView
+        android:id="@+id/textview_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="00:00" />
+
+      <TextView
+        android:id="@+id/textview_all_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:text="00:00" />
+
+        </RelativeLayout>
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/btn_brfore_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/previous_music"
+                android:button="@null" />
+
+            <CheckBox
+                android:id="@+id/btn_pause_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/start_pause_press"
+                android:button="@null" />
+
+            <CheckBox
+                android:id="@+id/btn_next_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_music"
+                android:button="@null" />
+        </LinearLayout>
+  </LinearLayout>
+</LinearLayout>
